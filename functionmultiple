@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+bool multiple(int number, int x){
+	return (number % x == 0);
+}
+
+int main(){
+	int integer, i;
+	
+	cout<<"Enter an integer: ";
+	cin>>integer;
+	
+	cout<<"Enter the multiple: ";
+	cin>>i;
+	
+	if(multiple(integer, i)) {
+		cout<< integer << " is a multiple of " << i << "." << endl;
+	}
+	else {
+		cout<< integer << " is not a multiple of " << i << "." <<endl;
+	}
+	return 0;
+}
